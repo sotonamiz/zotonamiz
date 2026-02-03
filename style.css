@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(160deg, #000000, #0b0b0b, #121212);
+  background: linear-gradient(160deg, #050505, #0b0b0b, #111);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -13,29 +13,29 @@ body {
   align-items: center;
 }
 
-.grid {
+.wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 160px);
-  grid-template-rows: repeat(2, 160px);
-  gap: 30px;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(2, 120px);
+  gap: 22px;
 }
 
 .tile {
-  border-radius: 18px;
+  border-radius: 14px;
   cursor: pointer;
-  transition: 0.25s ease;
-  opacity: 0.85;
+  transition: all 0.25s ease;
+  opacity: 0.92;
 }
 
 .tile:hover {
-  transform: scale(1.05);
-  opacity: 1;
-  box-shadow: 0 0 40px rgba(255,255,255,0.15);
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255,255,255,0.18);
 }
 
-.red { background: #ff2c2c; }
-.blue { background: #1da1f2; }
-.orange { background: #ff6a00; }
-.green { background: #1db954; }
-.purple { background: #8b5cf6; }
-.gray { background: #cfcfcf; }
+/* Colors */
+.youtube { background: #ff2c2c; }
+.twitter { background: #1da1f2; }
+.soundcloud { background: #ff6a00; }
+.spotify { background: #1db954; }
+.chatgpt { background: #a1a1aa; }   /* grey */
+.gmail { background: #f3a0a0; }     /* pastel red */
