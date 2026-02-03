@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Tab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid">
+  <div class="tile red" onclick="openLink('https://youtube.com')"></div>
+  <div class="tile blue" onclick="openLink('https://twitter.com')"></div>
+  <div class="tile orange" onclick="openLink('https://soundcloud.com')"></div>
+  <div class="tile green" onclick="openLink('https://open.spotify.com')"></div>
+  <div class="tile purple" onclick="openLink('https://chat.openai.com')"></div>
+  <div class="tile gray" onclick="openLink('https://mail.google.com')"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
