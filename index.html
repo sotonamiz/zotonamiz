@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Tab</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(160deg, #1a0004, #3a0010, #7a001f, #b0002a);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(2, 120px);
+  gap: 22px;
+}
+
+.tile {
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  opacity: 0.95;
+}
+
+.tile:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255,255,255,0.18);
+}
+
+/* Tile colors */
+
+.youtube { background: #ff2c2c; }
+.twitter { background: #1da1f2; }
+.soundcloud { background: #ff6a00; }
+
+.applemusic {
+  background: linear-gradient(135deg, #fa233b, #ff6a88);
+}
+
+.chatgpt { background: #8f8f8f; }
+.gmail { background: #ffd6d6; }
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="tile youtube" onclick="go('https://youtube.com')"></div>
+  <div class="tile twitter" onclick="go('https://twitter.com')"></div>
+  <div class="tile soundcloud" onclick="go('https://soundcloud.com')"></div>
+  <div class="tile applemusic" onclick="go('https://music.apple.com')"></div>
+  <div class="tile chatgpt" onclick="go('https://chat.openai.com')"></div>
+  <div class="tile gmail" onclick="go('https://mail.google.com')"></div>
+</div>
+
+<script>
+function go(url) {
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>
